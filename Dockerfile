@@ -1,0 +1,10 @@
+FROM openjdk:8
+MAINTAINER me@junno.xyz
+
+WORKDIR /data
+
+ENV JAVA_OPTS ""
+ENV JAR_NAME ""
+ENV JAR_OPTS ""
+
+CMD java $JAVA_OPTS -jar $JAR_NAME $JAR_OPTS
